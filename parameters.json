@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westindia"
+        },
+        "networkInterfaceName": {
+            "value": "koravm1"
+        },
+        "networkSecurityGroupName": {
+            "value": "koravm1-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkName": {
+            "value": "kora-app1-vnet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "kora-sub-1",
+                    "properties": {
+                        "addressPrefix": "10.0.0.0/28"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "koravm1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "koravm1"
+        },
+        "virtualMachineComputerName": {
+            "value": "koravm1"
+        },
+        "virtualMachineRG": {
+            "value": "korarg"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_A1_v2"
+        },
+        "adminUsername": {
+            "value": "azureuser"
+        },
+        "adminPassword": {
+            "value": null
+        }
+    }
+}
